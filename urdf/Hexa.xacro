@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<robot name="Hexa" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Hexa_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Hexa_description)/urdf/Hexa.trans" />
+<xacro:include filename="$(find Hexa_description)/urdf/Hexa.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.012186078410571176 -0.0224344536453961 0.11478353429233606" rpy="0 0 0"/>
+    <mass value="5.2215512049750945"/>
+    <inertia ixx="0.007305" iyy="0.007205" izz="0.008494" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint1_1">
+  <inertial>
+    <origin xyz="-0.017249498737064974 0.030459727623335396 -0.05028170355967204" rpy="0 0 0"/>
+    <mass value="0.1462971408515163"/>
+    <inertia ixx="6.4e-05" iyy="4.7e-05" izz="7.7e-05" ixy="1.5e-05" iyz="-1.7e-05" ixz="9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.024372 0.044869 -0.228" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.024372 0.044869 -0.228" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint2_1">
+  <inertial>
+    <origin xyz="0.038661884935205185 0.08964641623272433 0.04431136207566655" rpy="0 0 0"/>
+    <mass value="0.5712992435269599"/>
+    <inertia ixx="0.003173" iyy="0.000816" izz="0.002646" ixy="-0.0" iyz="-0.001197" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.004315 -0.013303 -0.196223" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.004315 -0.013303 -0.196223" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint3_1">
+  <inertial>
+    <origin xyz="0.02346583061234643 0.25889013648310066 -0.14411862858860852" rpy="0 0 0"/>
+    <mass value="0.08484280964737087"/>
+    <inertia ixx="0.00028" iyy="2.3e-05" izz="0.000293" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.033285 -0.008706 -0.428964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.033285 -0.008706 -0.428964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint4_1">
+  <inertial>
+    <origin xyz="0.010641595568822094 -0.3045958635168991 -0.1151546285886072" rpy="0 0 0"/>
+    <mass value="0.36454317701258093"/>
+    <inertia ixx="0.000697" iyy="0.000156" izz="0.000751" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.021 -0.697192 -0.4" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.021 -0.697192 -0.4" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/Joint4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint5_1">
+  <inertial>
+    <origin xyz="-0.017057148029853177 0.07459133668388296 3.7141139225260744e-07" rpy="0 0 0"/>
+    <mass value="0.32403192309695955"/>
+    <inertia ixx="0.0006" iyy="0.000202" izz="0.000602" ixy="1.1e-05" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.002474 -0.442596 -0.284845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/joint5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.002474 -0.442596 -0.284845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/joint5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Joint5_1_1">
+  <inertial>
+    <origin xyz="1.3098466321997959e-08 0.08926800270346136 3.7141139236362974e-07" rpy="0 0 0"/>
+    <mass value="0.2540678574498573"/>
+    <inertia ixx="0.000686" iyy="0.00011" izz="0.000695" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.019974 -0.470596 -0.284845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/_Joint5_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.019974 -0.470596 -0.284845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexa_description/meshes/_Joint5_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolución1" type="continuous">
+  <origin xyz="0.024372 -0.044869 0.228" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Joint1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolución2" type="continuous">
+  <origin xyz="-0.028687 0.058172 -0.031777" rpy="0 0 0"/>
+  <parent link="Joint1_1"/>
+  <child link="Joint2_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolución3" type="continuous">
+  <origin xyz="-0.02897 -0.004597 0.232741" rpy="0 0 0"/>
+  <parent link="Joint2_1"/>
+  <child link="Joint3_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Revolución4" type="continuous">
+  <origin xyz="0.054285 0.688486 -0.028964" rpy="0 0 0"/>
+  <parent link="Joint3_1"/>
+  <child link="Joint4_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Revolución5" type="continuous">
+  <origin xyz="-0.023474 -0.254596 -0.115155" rpy="0 0 0"/>
+  <parent link="Joint4_1"/>
+  <child link="joint5_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Corredera6" type="prismatic">
+  <origin xyz="-0.0175 0.028 0.0" rpy="0 0 0"/>
+  <parent link="joint5_1"/>
+  <child link="_Joint5_1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>
